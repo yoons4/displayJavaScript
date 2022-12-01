@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM tree structure</title>
+  </head>
+  <body>
+    <!--
+      <h1>DOM tree structure</h1>
+	  <h2>Learn about the DOM</h2>
 
+    <h1>Favorite TV Shows</h1>
+    <ul class = "list">
+      <li>Golden Girls</li>
+      <li>Archer</li>
+      <li>Rick and Morty</li>
+      <li>The Crown</li>
+    </ul>
+    
+    <p id="para1">This is my first paragraph.</p> 
+    <p id="para2">This is my second paragraph.</p>
+    -->
+    
+    
+    <h1>Reasons why I love freeCodeCamp:</h1>
+
+
+    <script>
+      /*
+        const paragraph1 = document.getElementById("para1");
+        console.log(paragraph1.textContent);
+
+        const h1Element = document.querySelector("h1");
+        console.log(h1Element.textContent);
+
+        const listItems = document.querySelectorAll("ul > li");
+        listItems.forEach((item) => {console.log(item)});
+        */
+       let unorderedList = document.createElement("ul");
+       document.body.appendChild(unorderedList);
+       let listItem1 = document.createElement("li");
+       listItem1.textContent = "It's free";
+       let listItem2 = document.createElement("li");
+       listItem2.textContent = "It's awesome";
+       unorderedList.appendChild(listItem1);
+       unorderedList.appendChild(listItem2);
+
+       const h1 = document.querySelector("h1");
+       h1.style.color = "blue";
+    </script>
+  </body>
+</html>
