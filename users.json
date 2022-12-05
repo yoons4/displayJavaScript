@@ -1,0 +1,16 @@
+[{
+    "username": "john",
+    "firstName": "John",
+    "lastName": "Doe",
+    "species": "Dog",
+    "profileURL": "dog.jpeg",
+    "email": "john.doe@example.com"
+},
+{
+    "username": "jane",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "species": "Cat",
+    "profileURL": "cat.jpeg",
+    "email": "jane.doe@example.com"
+}]
