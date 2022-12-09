@@ -1,3 +1,4 @@
+/*
 let unorderedList = document.createElement("ul");
 document.body.appendChild(unorderedList);
 let listItem1 = document.createElement("li");
@@ -9,11 +10,19 @@ unorderedList.appendChild(listItem2);
 
 const h1 = document.querySelector("h1");
 h1.style.color = "blue";
-
+*/
+const fruits = new Map([
+    ["apples", 500],
+    ["bananas", 600],
+    ["oranges", 900]
+  ]);
+document.getElementById("demo").innerHTML = fruits.get("apples");
 async function getUsers() {
     let url = 'users.json';
     try {
         let res = await fetch(url);
+        console.log(res.status);
+        console.log(res.statusText);
         return await res.json();
     } catch(error){
         console.log(error);
@@ -32,11 +41,14 @@ async function renderUsers() {
 
         html += htmlSegment;
     });
-
+    
     let container = document.querySelector('.container');
     container.innerHTML = html;
+    
+    
 }
 renderUsers();
+
 
 
 /*
