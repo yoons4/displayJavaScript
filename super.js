@@ -11,12 +11,14 @@ unorderedList.appendChild(listItem2);
 const h1 = document.querySelector("h1");
 h1.style.color = "blue";
 */
+
 const fruits = new Map([
     ["apples", 500],
     ["bananas", 600],
     ["oranges", 900]
   ]);
 document.getElementById("demo").innerHTML = fruits.get("apples");
+
 async function getUsers() {
     let url = 'users.json';
     try {
